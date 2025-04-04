@@ -1,7 +1,6 @@
 node_modules/
+CBIENBON-VIDEO/
+design/
 src/
 c.sh
 compile.sh
-public/assets/images/design/
-public/assets/videos/
-.gitignore
