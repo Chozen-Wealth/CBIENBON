@@ -1,5 +1,7 @@
 node_modules/
+src/
 c.sh
 compile.sh
 public/assets/images/design/
 public/assets/videos/
+.gitignore
