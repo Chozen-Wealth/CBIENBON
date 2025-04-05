@@ -11242,10 +11242,11 @@ footer > div:first-of-type {
   justify-content: space-between;
   color: white;
 }
-footer > div:first-of-type a {
-  color: white;
-  text-decoration: none;
+footer > div:first-of-type h6 {
+  margin-top: 0;
+  padding-top: 0;
   font-size: 32px;
+  font-weight: 400;
 }
 footer > div:first-of-type > div:first-of-type {
   flex-grow: 1;
@@ -11276,7 +11277,9 @@ footer > div:first-of-type > div:nth-of-type(2) {
   flex-grow: 1;
 }
 footer > div:first-of-type > div:nth-of-type(2) h6 {
-  font-size: 26px;
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 24px;
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
 }
@@ -11298,14 +11301,17 @@ footer > div:first-of-type > div:nth-of-type(2) ul li {
 footer > div:first-of-type > div:nth-of-type(2) ul li i {
   font-size: 12px;
   color: rgb(205, 164, 93);
+  margin-left: 10px;
 }
 footer > div:first-of-type > div:nth-of-type(3) {
   flex-grow: 1;
 }
 footer > div:first-of-type > div:nth-of-type(3) h6 {
-  font-size: 26px;
+  font-size: 24px;
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
+  margin-top: 0;
+  padding-top: 0;
 }
 footer > div:first-of-type > div:nth-of-type(3) ul {
   font-size: 20px;
@@ -11325,6 +11331,7 @@ footer > div:first-of-type > div:nth-of-type(3) ul li {
 footer > div:first-of-type > div:nth-of-type(3) ul li i {
   font-size: 12px;
   color: rgb(205, 164, 93);
+  margin-left: 10px;
 }
 footer > div:first-of-type > div:last-of-type {
   width: 20%;
@@ -11332,9 +11339,11 @@ footer > div:first-of-type > div:last-of-type {
   flex-grow: 2;
 }
 footer > div:first-of-type > div:last-of-type h6 {
-  font-size: 26px;
+  font-size: 24px;
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
+  margin-top: 0;
+  padding-top: 0;
 }
 footer > div:first-of-type > div:last-of-type p {
   font-size: 20px;
