@@ -11344,6 +11344,10 @@ footer > div:first-of-type > div:first-of-type > div i {
   justify-content: center;
   align-items: center;
   font-size: 20px;
+  cursor: pointer;
+}
+footer > div:first-of-type > div:first-of-type > div i:hover {
+  background-color: rgb(205, 164, 93);
 }
 footer > div:first-of-type > div:nth-of-type(2) {
   flex-grow: 1;
@@ -11369,11 +11373,15 @@ footer > div:first-of-type > div:nth-of-type(2) ul li {
   display: flex;
   gap: 10px;
   align-items: center;
+  cursor: pointer;
 }
 footer > div:first-of-type > div:nth-of-type(2) ul li i {
   font-size: 12px;
   color: rgb(205, 164, 93);
   margin-left: 10px;
+}
+footer > div:first-of-type > div:nth-of-type(2) ul li:hover {
+  color: rgb(205, 164, 93);
 }
 footer > div:first-of-type > div:nth-of-type(3) {
   flex-grow: 1;
@@ -11399,11 +11407,15 @@ footer > div:first-of-type > div:nth-of-type(3) ul li {
   display: flex;
   gap: 10px;
   align-items: center;
+  cursor: pointer;
 }
 footer > div:first-of-type > div:nth-of-type(3) ul li i {
   font-size: 12px;
   color: rgb(205, 164, 93);
   margin-left: 10px;
+}
+footer > div:first-of-type > div:nth-of-type(3) ul li:hover {
+  color: rgb(205, 164, 93);
 }
 footer > div:first-of-type > div:last-of-type {
   width: 20%;
