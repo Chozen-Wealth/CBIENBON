@@ -11229,6 +11229,32 @@ header #headerDroite #cerclePlay::before {
   margin-bottom: 25px;
 }
 
+footer {
+  background-color: rgb(13, 11, 9);
+  border-top: 2px solid rgba(168, 160, 141, 0.3);
+}
+footer > div:first-of-type {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+footer > div:last-of-type {
+  border-top: 2px solid rgba(168, 160, 141, 0.3);
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  height: 120px;
+}
+footer > div:last-of-type p {
+  margin: 0;
+}
+
 /*!
  * Bootstrap  v5.3.5 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
