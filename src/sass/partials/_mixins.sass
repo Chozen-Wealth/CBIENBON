@@ -56,11 +56,11 @@
 @mixin section2Carte()
     div
         padding-left: 40px 
-        padding-right: 40px
         padding-top: 70px
         padding-bottom: 20px
         background-color: $brun
         width: 100%
+        height: 350px
         h3:first-of-type
             color: $beige
             font-weight: bold
@@ -74,7 +74,17 @@
             margin-bottom: 20px
         p
             color: $gris
-            font-size: 22px
+            font-size: 21px
+    div:hover
+        background-color: $beige
+        padding-top: 50px
+        h3:first-of-type
+            color: white
+        h3:last-of-type
+            color: white
+        p
+            color: white
+        
 
 @mixin sections()
     padding-left: 5%

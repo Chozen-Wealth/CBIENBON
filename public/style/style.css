@@ -10528,6 +10528,7 @@ header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/hero-bg.jpg);
   background-size: cover;
   background-position: top;
+  background-attachment: fixed;
   height: 1100px;
   padding-left: 5%;
   padding-right: 5%;
@@ -10643,6 +10644,7 @@ header #headerDroite #cerclePlay::before {
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../assets/images/about-bg.jpg);
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 80px;
@@ -10740,11 +10742,11 @@ header #headerDroite #cerclePlay::before {
 }
 #section2 #section2Bot div {
   padding-left: 40px;
-  padding-right: 40px;
   padding-top: 70px;
   padding-bottom: 20px;
   background-color: rgb(26, 24, 20);
   width: 100%;
+  height: 350px;
 }
 #section2 #section2Bot div h3:first-of-type {
   color: rgb(205, 164, 93);
@@ -10761,7 +10763,20 @@ header #headerDroite #cerclePlay::before {
 }
 #section2 #section2Bot div p {
   color: rgb(170, 170, 170);
-  font-size: 22px;
+  font-size: 21px;
+}
+#section2 #section2Bot div:hover {
+  background-color: rgb(205, 164, 93);
+  padding-top: 50px;
+}
+#section2 #section2Bot div:hover h3:first-of-type {
+  color: white;
+}
+#section2 #section2Bot div:hover h3:last-of-type {
+  color: white;
+}
+#section2 #section2Bot div:hover p {
+  color: white;
 }
 
 #section3 {
