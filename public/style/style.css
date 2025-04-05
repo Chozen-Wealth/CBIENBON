@@ -11088,13 +11088,48 @@ header #headerDroite #cerclePlay::before {
   align-items: center;
   gap: 30px;
 }
-#section7 #section7Bot div {
+#section7 #section7Bot > div {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+#section7 #section7Bot > div > img {
   width: 100%;
 }
-#section7 #section7Bot div img {
+#section7 #section7Bot > div > div {
+  position: absolute;
   width: 100%;
+  height: 100%;
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 0.3s ease;
 }
-
+#section7 #section7Bot > div > div h5 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+  margin-bottom: 0px;
+}
+#section7 #section7Bot > div > div div {
+  display: flex;
+  gap: 25px;
+}
+#section7 #section7Bot > div > div div i {
+  font-size: 24px;
+}
+#section7 #section7Bot > div:hover > div {
+  opacity: 1;
+  transform: translateY(0);
+}
 #section8 {
   background-color: rgb(13, 11, 9);
 }
