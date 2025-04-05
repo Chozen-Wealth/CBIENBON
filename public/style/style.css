@@ -10638,6 +10638,67 @@ header #headerDroite #cerclePlay::before {
     opacity: 0;
   }
 }
+#section1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../assets/images/about-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#section1 #section1Gauche {
+  width: 50%;
+}
+#section1 #section1Gauche h3 {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+#section1 #section1Gauche p {
+  font-size: 22px;
+}
+#section1 #section1Gauche p i {
+  font-size: 26px;
+  color: rgb(205, 164, 93);
+}
+#section1 #section1Gauche p:first-of-type i {
+  color: white;
+}
+#section1 #section1Droite {
+  width: 50%;
+  position: relative;
+}
+#section1 #section1Droite img {
+  width: 100%;
+  border: 5px solid rgba(124, 124, 124, 0.5);
+}
+#section1 #section1Droite > div::after {
+  content: "";
+  background-color: transparent;
+  width: 80px;
+  height: 80px;
+  border-top: 7px solid rgb(205, 164, 93);
+  border-left: 7px solid rgb(205, 164, 93);
+  position: absolute;
+  left: 25px;
+  top: 25px;
+}
+#section1 #section1Droite > div::before {
+  content: "";
+  background-color: transparent;
+  width: 80px;
+  height: 80px;
+  border-bottom: 7px solid rgb(205, 164, 93);
+  border-right: 7px solid rgb(205, 164, 93);
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+}
+
 /*!
  * Bootstrap  v5.3.5 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
