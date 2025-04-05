@@ -15,8 +15,8 @@ nav
     top: 0px
     margin-bottom: -100px
     height: 100px
-    padding-left: 5%
-    padding-right: 5%
+    padding-left: 5% !important
+    padding-right: 5% !important
     z-index: 100
     button
         @include btn1()
@@ -24,7 +24,10 @@ nav
         @include btn1Hover()
     > a
         text-decoration: none
-        color: white
+        color: white !important
+    .active
+        color: $beige !important
+        background-color: transparent !important
     ul
         display: flex
         align-items: center
@@ -34,14 +37,10 @@ nav
             @include centerAll()
             a
                 text-decoration: none
-                color: white
+                color: white !important
                 transition: 0.3s ease
             a:hover
-                color: $beige
-        li:first-of-type
-            a:first-of-type
-                color: $beige
-        
+                color: $beige !important
 
 header
     background-image: linear-gradient($noir50, $noir50) , url(../assets/images/hero-bg.jpg)
@@ -341,14 +340,12 @@ header
                 width: 100%
 #section8
     background-color: $noir
-    @include sections()
     #section8Top
+        padding-left: 5% 
+        padding-right: 5%
         position: relative
         @include mini-titre-template()
         @include section-titre()
-    #section8Mid
-        iframe
-            width: 100%
 #section8-2
     iframe
             width: 100%

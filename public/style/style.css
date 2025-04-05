@@ -10480,8 +10480,8 @@ nav {
   top: 0px;
   margin-bottom: -100px;
   height: 100px;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 5% !important;
+  padding-right: 5% !important;
   z-index: 100;
 }
 nav button {
@@ -10498,7 +10498,11 @@ nav button:hover {
 }
 nav > a {
   text-decoration: none;
-  color: white;
+  color: white !important;
+}
+nav .active {
+  color: rgb(205, 164, 93) !important;
+  background-color: transparent !important;
 }
 nav ul {
   display: flex;
@@ -10513,14 +10517,11 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  color: white;
+  color: white !important;
   transition: 0.3s ease;
 }
 nav ul li a:hover {
-  color: rgb(205, 164, 93);
-}
-nav ul li:first-of-type a:first-of-type {
-  color: rgb(205, 164, 93);
+  color: rgb(205, 164, 93) !important;
 }
 
 header {
@@ -11096,12 +11097,10 @@ header #headerDroite #cerclePlay::before {
 
 #section8 {
   background-color: rgb(13, 11, 9);
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 80px;
-  padding-bottom: 80px;
 }
 #section8 #section8Top {
+  padding-left: 5%;
+  padding-right: 5%;
   position: relative;
 }
 #section8 #section8Top h6 {
@@ -11123,9 +11122,6 @@ header #headerDroite #cerclePlay::before {
   font-weight: bold;
   font-family: "Times New Roman", Times, serif;
   margin-bottom: 50px;
-}
-#section8 #section8Mid iframe {
-  width: 100%;
 }
 
 #section8-2 iframe {
