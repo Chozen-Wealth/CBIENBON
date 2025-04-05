@@ -134,9 +134,9 @@ header
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)) ,url(../assets/images/about-bg.jpg)
     background-position: center
     background-size: cover
-    height: 800px
-    padding-left: 5%
-    padding-right: 5%
+    @include sections()
+    padding-top: 100px
+    padding-bottom: 100px
     color: white
     @include centerAll()
     
@@ -181,3 +181,25 @@ header
         right: 25px
         bottom: 25px
 
+#section2
+    background-color: $noir
+    @include sections()
+    #section2Top
+        position: relative
+        @include mini-titre-template()
+        @include section-titre()
+    #section2Bot
+        display: flex
+        justify-content: space-between
+        gap: 25px
+        @include section2Carte()
+        
+            
+#section3
+    background-color: $brun
+    @include sections()
+    #section3Top
+        position: relative
+        @include mini-titre-template()
+        @include section-titre()
+        
