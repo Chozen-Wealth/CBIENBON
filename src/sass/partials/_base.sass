@@ -202,4 +202,64 @@ header
         position: relative
         @include mini-titre-template()
         @include section-titre()
-        
+    #section3Mid
+        @include centerAll()
+        ul
+            font-size: 24px
+            list-style: none
+            gap: 30px
+            color: white
+            font-family: 'Times New Roman', Times, serif
+            li
+                cursor: pointer
+            li:first-of-type
+                color: $beige
+    #section3Bot
+        margin-top: 50px
+        width: 100%
+        height: 680px
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        gap: 25px
+        #elementMenu
+            position: relative
+            margin-bottom: 25px
+            width: calc( 50% - 25px )
+            @include elementMenu()
+
+#section4
+    @include sections()
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)) ,url(../assets/images/events-bg.jpg)
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    > div
+        position: relative
+        @include mini-titre-template()
+        @include section-titre()
+    #carouselItems
+        display: flex
+        color: white
+        gap: 25px
+        margin-bottom: 80px
+        #carouselBtn
+        > div
+            flex-grow: 1
+            width: 50%
+            img
+                width: 100%
+            p
+                font-size: 1vw
+                margin-top: 20px
+            p:first-of-type
+                color: $beige
+                font-size: 2vw
+                font-family: 'Times New Roman', Times, serif
+            p:nth-of-type(2)
+                font-size: 1.8vw
+                border-bottom: 3px solid $beige
+                display: inline
+                font-weight: bold
+            p:nth-of-type(3)
+                font-style: italic

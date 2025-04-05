@@ -78,3 +78,30 @@
     padding-right: 5%
     padding-top: 80px
     padding-bottom: 80px
+
+@mixin elementMenu()
+    > div:first-of-type
+        img
+            width: 90px
+            border-radius: 50%
+            border: 6px solid $gris25
+    > div:nth-of-type(2)
+        width: 100%
+        > div:first-of-type
+            display: flex
+            justify-content: space-between
+            align-items: center
+            h6:first-of-type
+                color: white
+                font-size: 24px
+            >div
+                flex-grow: 1
+                border: 1px dashed $gris
+                height: 1px
+                margin-right: 10px
+                margin-left: 10px
+            h6:last-of-type
+                color: $beige
+                font-size: 24px
+        p
+            color: $gris
