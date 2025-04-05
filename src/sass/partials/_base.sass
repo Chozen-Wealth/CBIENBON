@@ -158,9 +158,18 @@ header
     #section1Droite
         width: 50%
         position: relative
+        transition: 0.3s ease
         img
             width: 100%
             border: 5px solid rgba(124, 124, 124, 0.5)
+    #section1Droite:hover
+        transform: scale(105%)
+        > div::after
+            left: 15px
+            top: 15px
+        > div::before
+            right: 15px
+            bottom: 15px
     #section1Droite > div::after
         content: ""
         background-color: transparent
@@ -171,6 +180,8 @@ header
         position: absolute
         left: 25px
         top: 25px
+        z-index: 10
+        transition: 0.3s ease
     #section1Droite > div::before
         content: ""
         background-color: transparent
@@ -181,6 +192,8 @@ header
         position: absolute
         right: 25px
         bottom: 25px
+        z-index: 10
+        transition: 0.3s ease
 
 #section2
     background-color: $noir

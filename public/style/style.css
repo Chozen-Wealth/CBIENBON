@@ -10677,10 +10677,22 @@ header #headerDroite #cerclePlay::before {
 #section1 #section1Droite {
   width: 50%;
   position: relative;
+  transition: 0.3s ease;
 }
 #section1 #section1Droite img {
   width: 100%;
   border: 5px solid rgba(124, 124, 124, 0.5);
+}
+#section1 #section1Droite:hover {
+  transform: scale(105%);
+}
+#section1 #section1Droite:hover > div::after {
+  left: 15px;
+  top: 15px;
+}
+#section1 #section1Droite:hover > div::before {
+  right: 15px;
+  bottom: 15px;
 }
 #section1 #section1Droite > div::after {
   content: "";
@@ -10692,6 +10704,8 @@ header #headerDroite #cerclePlay::before {
   position: absolute;
   left: 25px;
   top: 25px;
+  z-index: 10;
+  transition: 0.3s ease;
 }
 #section1 #section1Droite > div::before {
   content: "";
@@ -10703,6 +10717,8 @@ header #headerDroite #cerclePlay::before {
   position: absolute;
   right: 25px;
   bottom: 25px;
+  z-index: 10;
+  transition: 0.3s ease;
 }
 
 #section2 {
