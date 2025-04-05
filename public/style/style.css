@@ -10471,6 +10471,58 @@ readers do not read off random characters that represent icons */
   padding: 0;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0px;
+  margin-bottom: -100px;
+  height: 100px;
+  padding-left: 5%;
+  padding-right: 5%;
+  z-index: 100;
+}
+nav button {
+  border: 2px solid rgb(205, 164, 93);
+  padding: 10px 35px;
+  color: white;
+  background-color: transparent;
+  border-radius: 32px;
+  font-size: 1.25rem;
+  transition: 0.3s ease;
+}
+nav button:hover {
+  background-color: rgb(205, 164, 93);
+}
+nav > a {
+  text-decoration: none;
+  color: white;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 35px;
+}
+nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease;
+}
+nav ul li a:hover {
+  color: rgb(205, 164, 93);
+}
+nav ul li:first-of-type a:first-of-type {
+  color: rgb(205, 164, 93);
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/hero-bg.jpg);
   background-size: cover;

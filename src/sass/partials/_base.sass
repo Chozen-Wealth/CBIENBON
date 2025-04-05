@@ -6,7 +6,41 @@
     margin: 0
     padding: 0
  
-
+nav
+    display: flex
+    align-items: center
+    justify-content: space-between
+    background-color: $noir50
+    position: sticky
+    top: 0px
+    margin-bottom: -100px
+    height: 100px
+    padding-left: 5%
+    padding-right: 5%
+    z-index: 100
+    button
+        @include btn1()
+    button:hover
+        @include btn1Hover()
+    > a
+        text-decoration: none
+        color: white
+    ul
+        display: flex
+        align-items: center
+        list-style: none
+        gap: 35px
+        li
+            @include centerAll()
+            a
+                text-decoration: none
+                color: white
+                transition: 0.3s ease
+            a:hover
+                color: $beige
+        li:first-of-type
+            a:first-of-type
+                color: $beige
         
 
 header
