@@ -11076,11 +11076,21 @@ header #headerDroite #cerclePlay::before {
   align-items: center;
   padding-right: 20px;
   width: 100%;
+  overflow: hidden;
 }
-#section6-2 #section6Bot > div img {
+#section6-2 #section6Bot > div > div {
   width: 25%;
+  overflow: hidden;
   margin-right: 5px;
   margin-bottom: 5px;
+}
+#section6-2 #section6Bot > div > div img {
+  width: 100%;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+#section6-2 #section6Bot > div > div img:hover {
+  transform: scale(105%);
 }
 
 #section7 {
