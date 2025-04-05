@@ -2,9 +2,58 @@
 @use "./_icons" as *
 @use "./_mixins" as *
 
-
+*
+    margin: 0
+    padding: 0
+ 
+nav
+    display: flex
+    align-items: center
+    justify-content: space-between
+    background-color: $noir50
+    position: sticky
+    top: 0px
+    margin-bottom: -100px
+    height: 100px
+    padding-left: 20px
+    padding-right: 20px
+    border-bottom: 2px solid black
+    button
+        @include btn1()
+    > a
+        text-decoration: none
+        color: white
+    ul
+        display: flex
+        align-items: center
+        list-style: none
+        gap: 35px
+        li
+            @include centerAll()
+            a
+                text-decoration: none
+                color: white
+        li:first-of-type
+            a:first-of-type
+                color: $beige
+        
 
 header
+    background-image: linear-gradient($noir50, $noir50) , url(../assets/images/hero-bg.jpg)
+    background-size: cover
+    background-position: center
+    height: 900px
+    padding: 30px
+    display: flex
+    align-items: center
     h1
+        color: white
+        font-weight: bold
+        span
+            color: $beige
     h3
+        color: white
+        font-family: 'Times New Roman', Times, serif
     button
+        @include btn1()
+        

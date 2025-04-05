@@ -10466,6 +10466,84 @@ readers do not read off random characters that represent icons */
   --fa: "\f3f6";
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0px;
+  margin-bottom: -100px;
+  height: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 2px solid black;
+}
+nav button {
+  border: 4px solid rgb(205, 164, 93);
+  padding: 10px 35px;
+  color: white;
+  background-color: transparent;
+  border-radius: 32px;
+  font-size: 1.25rem;
+}
+nav > a {
+  text-decoration: none;
+  color: white;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 35px;
+}
+nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+nav ul li:first-of-type a:first-of-type {
+  color: rgb(205, 164, 93);
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 900px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+}
+header h1 {
+  color: white;
+  font-weight: bold;
+}
+header h1 span {
+  color: rgb(205, 164, 93);
+}
+header h3 {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+header button {
+  border: 4px solid rgb(205, 164, 93);
+  padding: 10px 35px;
+  color: white;
+  background-color: transparent;
+  border-radius: 32px;
+  font-size: 1.25rem;
+}
+
 /*!
  * Bootstrap  v5.3.4 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
