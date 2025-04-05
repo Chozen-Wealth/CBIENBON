@@ -14,10 +14,13 @@
     
 @mixin btn2()
     border: none
-    padding: 10px 20px
+    padding: 10px 40px
     color: white
     background-color: $beige
     border-radius: 32px
+    font-size: 1.5rem
+    @include centerAll()
+    padding-bottom: 12px
 
 @mixin centerAll()
     display: flex
@@ -31,10 +34,10 @@
 @mixin mini-titre-trait()
     content: "" 
     position: absolute
-    left: 100px
     top: 12px
     width: 150px
     border-bottom: 1px solid $gris25
+    margin-left: 15px
 
 @mixin mini-titre-template()
     h6
