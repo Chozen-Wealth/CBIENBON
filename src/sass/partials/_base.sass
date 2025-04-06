@@ -251,7 +251,11 @@ header
         text-decoration: none
         z-index: 100
         opacity: 0
-        animation: apparition 0.5s ease 2s forwards
+        animation: apparition 0.5s ease 5s forwards
+    > a:hover
+        background-color: $beige
+        color: $noir
+        
 @keyframes apparition
     0%
         opacity: 0
@@ -315,30 +319,34 @@ header
         position: relative
         @include mini-titre-template()
         @include section-titre()
-    #carouselItems
-        display: flex
-        align-items: flex-start
+#carouselExampleIndicators
+    padding-bottom: 100px
+    .carousel-indicators
+        gap: 5px
+        button
+            width: 15px
+            height: 15px
+            border-radius: 50%
+            background-color: rgba(255, 255, 255, 0.5)
+            border: none
+        button.active
+            background-color: $beige
+.Carousel-Texte
+    p
         color: white
-        gap: 25px
-        margin-bottom: 80px
-        > div
-            width: 50%
-            img
-                width: 100% !important
-            p
-                font-size: 1vw
-                margin-top: 20px
-            p:first-of-type
-                color: $beige
-                font-size: 2vw
-                font-family: 'Times New Roman', Times, serif
-            p:nth-of-type(2)
-                font-size: 1.8vw
-                border-bottom: 3px solid $beige
-                display: inline
-                font-weight: bold
-            p:nth-of-type(3)
-                font-style: italic
+        font-size: 1vw
+        margin-top: 20px
+    p:first-of-type
+        color: $beige
+        font-size: 2vw
+        font-family: 'Times New Roman', Times, serif
+    p:nth-of-type(2)
+        font-size: 1.8vw
+        border-bottom: 3px solid $beige
+        display: inline
+        font-weight: bold
+    p:nth-of-type(3)
+        font-style: italic
 
 #section5
     background-color: $noir
