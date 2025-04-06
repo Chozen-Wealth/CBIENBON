@@ -31,10 +31,17 @@
             <button>BOOK A TABLE</button>
         </div>
         <div id="headerDroite">
-            <div id="cerclePlay">
+            <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                      <video width="500rem" src="./public/assets/videos/Video1.mp4" controls></video>
+                </div>
+              </div>
+            </div>
+            <button id="cerclePlay" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <svg id="playBtn1" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M7 6v12l10-6z"></path></svg>
                 <svg id="playBtn2" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M7 6v12l10-6z"></path></svg>
-            </div>
+            </button>
         </div>
     </header>
 

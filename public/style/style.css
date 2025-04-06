@@ -10548,6 +10548,13 @@ header h3 {
   color: white;
   font-family: "Times New Roman", Times, serif;
 }
+header .modal-dialog {
+  transform: scale(0%);
+  transition: 0.3s ease;
+}
+header .modal-dialog.focus {
+  transform: scale(100%);
+}
 header button {
   border: 2px solid rgb(205, 164, 93);
   padding: 10px 35px;
@@ -10583,6 +10590,7 @@ header #headerDroite #cerclePlay {
   cursor: pointer;
   overflow: hidden;
   transition: 0.3s ease;
+  border: none;
 }
 header #headerDroite #cerclePlay #playBtn1 {
   fill: rgb(255, 255, 255);
