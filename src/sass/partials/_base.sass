@@ -5,7 +5,48 @@
 *
     margin: 0
     padding: 0
- 
+body
+    #VideoBox
+        background-color: rgba(0, 0, 0, 0.5)
+        width: 100%
+        height: 100%
+        position: fixed
+        z-index: 2000
+        top: 0px
+        left: 0px
+        pointer-events: all
+        visibility: hidden
+        transition: 0.5s ease
+        opacity: 0
+        @include centerAll()
+        div
+            @include centerAll()
+            width: 60%
+            padding-top: 30px
+            padding-bottom: 30px
+            background-color: black
+            border-radius: 20px
+            box-shadow: 0px 0px 20px $beige
+            transform: scale(0%)
+            transition: 0.5s ease
+            border: 1px solid white
+            video
+                opacity: 0
+                transform: scale(0%)
+                transition: 0.5s ease
+                width: 100%
+body:has(#checkPlayer:checked)
+    pointer-events: none
+    overflow-y: hidden
+    #VideoBox
+        visibility: visible
+        opacity: 1
+        @include centerAll()
+        div
+            transform: scale(100%)
+            video
+                opacity: 1
+                transform: scale(100%)
 nav
     display: flex
     align-items: center
@@ -62,11 +103,6 @@ header
     h3
         color: white
         font-family: 'Times New Roman', Times, serif
-    .modal-dialog
-        transform: scale(0%)
-        transition: 0.3s ease
-    .modal-dialog.focus
-        transform: scale(100%)
     button
         @include btn1()
     button:hover
@@ -78,6 +114,8 @@ header
         @include centerAll()
         justify-content: end
         margin-right: 10%
+        #checkPlayer
+            display: none
         #cerclePlay
             background-color: rgb(205, 164, 93, 0.5)
             width: 150px
@@ -99,6 +137,7 @@ header
                 fill: rgb(255, 255, 255)
                 margin-left: 5px
                 transition: 0.5s ease
+
         #cerclePlay:hover
             background-color: rgb(205, 164, 93)
             #playBtn1
@@ -146,7 +185,6 @@ header
     padding-bottom: 100px
     color: white
     @include centerAll()
-    
     #section1Gauche
         width: 50%
         h3
@@ -200,6 +238,25 @@ header
         bottom: 25px
         z-index: 10
         transition: 0.3s ease
+    > a
+        position: fixed
+        bottom: 15px
+        right: 15px
+        color: $beige
+        height: 50px
+        width: 50px
+        @include centerAll()
+        border: 2px solid $beige
+        border-radius: 50%
+        text-decoration: none
+        z-index: 100
+        opacity: 0
+        animation: apparition 0.5s ease 2s forwards
+@keyframes apparition
+    0%
+        opacity: 0
+    100%
+        opacity: 1
 
 #section2
     background-color: $noir

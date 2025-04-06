@@ -8,7 +8,11 @@
     <title>CBIENBON</title>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navPerso" data-bs-smooth-scroll="true" tabindex="0">
-
+    <label for="checkPlayer" id="VideoBox">
+        <div>
+            <video id="maVideo" src="./public/assets/videos/Video1.mp4" controls></video>
+        </div>
+    </label>
     <nav id="navPerso" class="navbar sticky-top">
         <a href="#" class="fs-1 navbar-brand">CBIENBON</a>
         <ul class="nav nav-pills">
@@ -31,17 +35,11 @@
             <button>BOOK A TABLE</button>
         </div>
         <div id="headerDroite">
-            <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                      <video width="500rem" src="./public/assets/videos/Video1.mp4" controls></video>
-                </div>
-              </div>
-            </div>
-            <button id="cerclePlay" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <input type="checkbox" name="" id="checkPlayer" onchange="const vid = document.getElementById('maVideo');if (this.checked) {vid.currentTime = 0;} else {vid.pause();}">
+            <label for="checkPlayer" id="cerclePlay">
                 <svg id="playBtn1" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M7 6v12l10-6z"></path></svg>
                 <svg id="playBtn2" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M7 6v12l10-6z"></path></svg>
-            </button>
+            </label>
         </div>
     </header>
 
@@ -68,6 +66,7 @@
                     <img src="./public/assets/images/about.jpg" alt="">
                 </div>
             </div>
+            <a href="#headerPerso"><i id="flecheHaut" class="fa-solid fa-arrow-up"></i></a>
         </section>
 
         <section id="section2">
