@@ -318,6 +318,9 @@ header
                     color: rgb(168, 160, 141)
                 button
                     @include btn2()
+                button:hover
+                    @include btn2Hover()
+                    
 #section6
     background-color: $noir
     @include sections()
@@ -478,6 +481,9 @@ header
                         color: rgb(168, 160, 141)
                     button
                         @include btn2()
+                    button:hover
+                        @include btn2Hover()
+                        
                 div:first-of-type
                     display: flex
                     gap: 30px
@@ -606,6 +612,9 @@ footer
                     right: 0px
                     @include btn2()
                     padding: 10px 30px
+                button:hover
+                    @include btn2Hover()
+                    
                     
                 
     > div:last-of-type

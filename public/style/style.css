@@ -11033,6 +11033,10 @@ header #headerDroite #cerclePlay::before {
   justify-content: center;
   align-items: center;
   padding-bottom: 12px;
+  transition: 0.3s ease;
+}
+#section5 #section5Bot form #section5TextAndButton button:hover {
+  background-color: rgb(202, 146, 48);
 }
 
 #section6 {
@@ -11302,6 +11306,10 @@ header #headerDroite #cerclePlay::before {
   justify-content: center;
   align-items: center;
   padding-bottom: 12px;
+  transition: 0.3s ease;
+}
+#section8-3 #section8Bot #section8BotDroite form div button:hover {
+  background-color: rgb(202, 146, 48);
 }
 #section8-3 #section8Bot #section8BotDroite form div:first-of-type {
   display: flex;
@@ -11466,7 +11474,11 @@ footer > div:first-of-type > div:last-of-type > div button {
   justify-content: center;
   align-items: center;
   padding-bottom: 12px;
+  transition: 0.3s ease;
   padding: 10px 30px;
+}
+footer > div:first-of-type > div:last-of-type > div button:hover {
+  background-color: rgb(202, 146, 48);
 }
 footer > div:last-of-type {
   border-top: 2px solid rgba(168, 160, 141, 0.3);
