@@ -97,20 +97,24 @@
         </section>
 
         <section id="section3">
+            <input type="radio" name="filtreMenu" id="filtreAll" checked>
+            <input type="radio" name="filtreMenu" id="filtreStarters">
+            <input type="radio" name="filtreMenu" id="filtreSalads">
+            <input type="radio" name="filtreMenu" id="filtreSpeciality">
             <div id="section3Top">
                 <h6>MENU</h6>
                 <h2>Check Our Tasty Menu</h2>
             </div>
             <div id="section3Mid">
                 <ul class="d-flex">
-                    <li>All</li>
-                    <li>Starters</li>
-                    <li>Salads</li>
-                    <li>Speciality</li>
+                    <li><label for="filtreAll">All</label></li>
+                    <li><label for="filtreStarters">Starters</label></li>
+                    <li><label for="filtreSalads">Salads</label></li>
+                    <li><label for="filtreSpeciality">Speciality</label></li>
                 </ul>
             </div>
             <div id="section3Bot">
-                <div id="elementMenu" class="d-flex">
+                <div class="elementMenu starters">
                     <div>
                         <img src="./public/assets/images/menu/lobster-bisque.jpg" alt="">
                     </div>
@@ -125,7 +129,22 @@
                         </div>
                     </div>
                 </div>
-                <div id="elementMenu" class="d-flex">
+                <div class="elementMenu speciality">
+                    <div>
+                        <img src="./public/assets/images/menu/bread-barrel.jpg" alt="">
+                    </div>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex">
+                            <h6>Bread Barrel</h6>
+                            <div></div>
+                            <h6>$6.95</h6>
+                        </div>
+                        <div>
+                            <p>Lorem, deren, trataro, filede, nerada</p>
+                        </div>
+                    </div>
+                </div>                      
+                <div class="elementMenu starters">
                     <div>
                         <img src="./public/assets/images/menu/cake.jpg" alt="">
                     </div>
@@ -140,67 +159,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="elementMenu" class="d-flex">
-                    <div>
-                        <img src="./public/assets/images/menu/tuscan-grilled.jpg" alt="">
-                    </div>
-                    <div class="d-flex flex-column">
-                        <div class="d-flex">
-                            <h6>Tuscan Grilled</h6>
-                            <div></div>
-                            <h6>$9.95</h6>
-                        </div>
-                        <div>
-                            <p>Grilled chicken with provolone, artichoke hearts, and roasted red pesto</p>
-                        </div>
-                    </div>
-                </div>
-                <div id="elementMenu" class="d-flex">
-                    <div>
-                        <img src="./public/assets/images/menu/greek-salad.jpg" alt="">
-                    </div>
-                    <div class="d-flex flex-column">
-                        <div class="d-flex">
-                            <h6>Greek Salad</h6>
-                            <div></div>
-                            <h6>$9.95</h6>
-                        </div>
-                        <div>
-                            <p>Fresh spinach, crisp romaine, tomatoes, and Greek olives</p>
-                        </div>
-                    </div>
-                </div>
-                <div id="elementMenu" class="d-flex">
-                    <div>
-                        <img src="./public/assets/images/menu/lobster-roll.jpg" alt="">
-                    </div>
-                    <div class="d-flex flex-column">
-                        <div class="d-flex">
-                            <h6>Lobster Roll</h6>
-                            <div></div>
-                            <h6>$12.95</h6>
-                        </div>
-                        <div>
-                            <p>Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll</p>
-                        </div>
-                    </div>
-                </div>
-                <div id="elementMenu" class="d-flex">
-                    <div>
-                        <img src="./public/assets/images/menu/bread-barrel.jpg" alt="">
-                    </div>
-                    <div class="d-flex flex-column">
-                        <div class="d-flex">
-                            <h6>Bread Barrel</h6>
-                            <div></div>
-                            <h6>$6.95</h6>
-                        </div>
-                        <div>
-                            <p>Lorem, deren, trataro, filede, nerada</p>
-                        </div>
-                    </div>
-                </div>
-                <div id="elementMenu" class="d-flex">
+                <div class="elementMenu salads">
                     <div>
                         <img src="./public/assets/images/menu/caesar.jpg" alt="">
                     </div>
@@ -215,7 +174,22 @@
                         </div>
                     </div>
                 </div>
-                <div id="elementMenu" class="d-flex">
+                <div class="elementMenu speciality">
+                    <div>
+                        <img src="./public/assets/images/menu/tuscan-grilled.jpg" alt="">
+                    </div>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex">
+                            <h6>Tuscan Grilled</h6>
+                            <div></div>
+                            <h6>$9.95</h6>
+                        </div>
+                        <div>
+                            <p>Grilled chicken with provolone, artichoke hearts, and roasted red pesto</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="elementMenu starters">
                     <div>
                         <img src="./public/assets/images/menu/mozzarella.jpg" alt="">
                     </div>
@@ -229,8 +203,23 @@
                             <p>Lorem, deren, trataro, filede, nerada</p>
                         </div>
                     </div>
+                </div>                                                           
+                <div class="elementMenu salads">
+                    <div>
+                        <img src="./public/assets/images/menu/greek-salad.jpg" alt="">
+                    </div>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex">
+                            <h6>Greek Salad</h6>
+                            <div></div>
+                            <h6>$9.95</h6>
+                        </div>
+                        <div>
+                            <p>Fresh spinach, crisp romaine, tomatoes, and Greek olives</p>
+                        </div>
+                    </div>
                 </div>
-                <div id="elementMenu" class="d-flex">
+                <div class="elementMenu salads">
                     <div>
                         <img src="./public/assets/images/menu/spinach-salad.jpg" alt="">
                     </div>
@@ -242,6 +231,21 @@
                         </div>
                         <div>
                             <p>Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="elementMenu speciality">
+                    <div>
+                        <img src="./public/assets/images/menu/lobster-roll.jpg" alt="">
+                    </div>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex">
+                            <h6>Lobster Roll</h6>
+                            <div></div>
+                            <h6>$12.95</h6>
+                        </div>
+                        <div>
+                            <p>Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll</p>
                         </div>
                     </div>
                 </div>

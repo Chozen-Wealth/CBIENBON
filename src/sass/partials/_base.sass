@@ -11,10 +11,10 @@ body
         width: 100%
         height: 100%
         position: fixed
-        z-index: 2000
+        z-index: -10
         top: 0px
         left: 0px
-        pointer-events: all
+        pointer-events: none
         visibility: hidden
         transition: 0.5s ease
         opacity: 0
@@ -41,6 +41,8 @@ body:has(#checkPlayer:checked)
     #VideoBox
         visibility: visible
         opacity: 1
+        pointer-events: auto
+        z-index: 2000
         @include centerAll()
         div
             transform: scale(100%)
@@ -293,21 +295,173 @@ header
             font-family: 'Times New Roman', Times, serif
             li
                 cursor: pointer
+                label
+                    cursor: pointer
             li:first-of-type
                 color: $beige
+    input
+        display: none
+
+
     #section3Bot
         margin-top: 50px
         width: 100%
-        height: 680px
+        height: fit-content
         display: flex
-        flex-direction: column
         flex-wrap: wrap
         gap: 25px
-        #elementMenu
+        .elementMenu
             position: relative
             margin-bottom: 25px
-            width: calc( 50% - 25px )
             @include elementMenu()
+            display: flex
+            opacity: 0
+            transition: 0.5s ease
+
+
+
+@keyframes apparitionMenus1
+    0%
+        opacity: 0
+        transform: scale(50%)
+        width: calc( 40% - 25px )
+        transform: translateX(-30px)
+    100%
+        opacity: 1
+        transform: scale(100%)
+        width: calc( 50% - 25px )
+        transform: translateX(0)
+@keyframes apparitionMenus2
+    0%
+        opacity: 0
+        transform: scale(50%)
+        width: calc( 40% - 25px )
+        transform: translateX(-30px)
+    100%
+        opacity: 1
+        transform: scale(100%)
+        width: calc( 50% - 25px )
+        transform: translateX(0)
+@keyframes apparitionMenus3
+    0%
+        opacity: 0
+        transform: scale(50%)
+        width: calc( 40% - 25px )
+        transform: translateX(-30px)
+    100%
+        opacity: 1
+        transform: scale(100%)
+        width: calc( 50% - 25px )
+        transform: translateX(0)
+@keyframes apparitionMenus4
+    0%
+        opacity: 0
+        transform: scale(50%)
+        width: calc( 40% - 25px )
+        transform: translateX(-30px)
+    100%
+        opacity: 1
+        transform: scale(100%)
+        width: calc( 50% - 25px )
+        transform: translateX(0)
+
+#section3:has(#filtreAll:checked)
+    .elementMenu
+        position: relative
+        visibility: visible
+        pointer-events: auto
+        width: calc( 50% - 25px )
+        animation: apparitionMenus1 0.5s ease forwards
+    .elementMenu:nth-of-type(1)
+        animation-delay: 0s
+    .elementMenu:nth-of-type(2)
+        animation-delay: 0.05s
+    .elementMenu:nth-of-type(3)
+        animation-delay: 0.15s
+    .elementMenu:nth-of-type(4)
+        animation-delay: 0.2s
+    .elementMenu:nth-of-type(5)
+        animation-delay: 0.25s
+    .elementMenu:nth-of-type(6)
+        animation-delay: 0.3s
+    .elementMenu:nth-of-type(7)
+        animation-delay: 0.35s
+    .elementMenu:nth-of-type(8)
+        animation-delay: 0.4s
+    .elementMenu:nth-of-type(9)
+        animation-delay: 0.45s
+#section3:has(#filtreStarters:checked)
+    .starters
+        position: relative
+        visibility: visible
+        pointer-events: auto
+        animation: apparitionMenus2 0.5s ease forwards
+    .elementMenu:nth-of-type(1)
+        animation-delay: 0s
+    .elementMenu:nth-of-type(3)
+        animation-delay: 0.15s
+    .elementMenu:nth-of-type(6)
+        animation-delay: 0.3s
+    .salads
+        opacity: 0
+        position: absolute
+        visibility: hidden
+        pointer-events: none
+        transition: opacity 0s, position 0.5s ease 1s
+    .speciality
+        opacity: 0
+        position: absolute
+        visibility: hidden
+        pointer-events: none
+        transition: opacity 0s, position 0.5s ease 1s
+#section3:has(#filtreSalads:checked)
+    .salads
+        position: relative
+        visibility: visible
+        pointer-events: auto
+        animation: apparitionMenus3 0.5s ease forwards
+    .elementMenu:nth-of-type(4)
+        animation-delay: 0s
+    .elementMenu:nth-of-type(7)
+        animation-delay: 0.15s
+    .elementMenu:nth-of-type(8)
+        animation-delay: 0.3s
+    .starters
+        opacity: 0
+        position: absolute
+        visibility: hidden
+        pointer-events: none
+        transition: opacity 0s, position 0.5s ease 1s
+    .speciality
+        opacity: 0
+        position: absolute
+        visibility: hidden
+        pointer-events: none
+        transition: opacity 0s, position 0.5s ease 1s
+#section3:has(#filtreSpeciality:checked)
+    .speciality
+        position: relative
+        visibility: visible
+        pointer-events: auto
+        animation: apparitionMenus4 0.5s ease forwards
+    .elementMenu:nth-of-type(2)
+        animation-delay: 0s
+    .elementMenu:nth-of-type(5)
+        animation-delay: 0.15s
+    .elementMenu:nth-of-type(9)
+        animation-delay: 0.3s
+    .starters
+        opacity: 0
+        position: absolute
+        visibility: hidden
+        pointer-events: none
+        transition: opacity 0s, position 0.5s ease 1s
+    .salads
+        opacity: 0
+        position: absolute
+        visibility: hidden
+        pointer-events: none
+        transition: opacity 0s, position 0.5s ease 1s
 
 #section4
     @include sections()
