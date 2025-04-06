@@ -10541,6 +10541,8 @@ nav {
   padding-left: 5% !important;
   padding-right: 5% !important;
   z-index: 100;
+  flex-wrap: nowrap !important;
+  width: 100% !important;
 }
 nav button {
   border: 2px solid rgb(205, 164, 93);
@@ -10550,6 +10552,7 @@ nav button {
   border-radius: 32px;
   font-size: 1.25rem;
   transition: 0.3s ease;
+  text-wrap: nowrap;
 }
 nav button:hover {
   background-color: rgb(205, 164, 93);
@@ -10557,6 +10560,13 @@ nav button:hover {
 nav > a {
   text-decoration: none;
   color: white !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+nav i {
+  display: none;
+  color: white;
+  font-size: 2rem;
 }
 nav .active {
   color: rgb(205, 164, 93) !important;
@@ -10566,7 +10576,15 @@ nav ul {
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 35px;
+  flex-wrap: nowrap !important;
+  gap: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between !important;
+  flex-grow: 1;
+  padding-left: 5% !important;
+  padding-right: 5% !important;
 }
 nav ul li {
   display: flex;
@@ -10574,9 +10592,11 @@ nav ul li {
   align-items: center;
 }
 nav ul li a {
+  padding: 1% !important;
   text-decoration: none;
   color: white !important;
   transition: 0.3s ease;
+  font-size: 1.5rem !important;
 }
 nav ul li a:hover {
   color: rgb(205, 164, 93) !important;
@@ -10846,6 +10866,7 @@ header #headerDroite #cerclePlay::before {
   display: flex;
   justify-content: space-between;
   gap: 25px;
+  flex-wrap: wrap;
 }
 #section2 #section2Bot div {
   padding-left: 40px;
@@ -10854,6 +10875,7 @@ header #headerDroite #cerclePlay::before {
   background-color: rgb(26, 24, 20);
   width: 100%;
   height: 350px;
+  transition: 0.1s ease;
 }
 #section2 #section2Bot div h3:first-of-type {
   color: rgb(205, 164, 93);
@@ -11460,6 +11482,7 @@ header #headerDroite #cerclePlay::before {
   opacity: 1;
   transform: translateY(0);
 }
+
 #section8 {
   background-color: rgb(13, 11, 9);
 }
@@ -11509,6 +11532,7 @@ header #headerDroite #cerclePlay::before {
   display: flex;
   flex-direction: column;
   gap: 50px;
+  width: 30%;
 }
 #section8-3 #section8Bot #section8BotGauche #section8BotElement {
   display: flex;
@@ -11606,6 +11630,8 @@ footer > div:first-of-type {
   display: flex;
   justify-content: space-between;
   color: white;
+  width: 100%;
+  flex-wrap: wrap !important;
 }
 footer > div:first-of-type h6 {
   margin-top: 0;
@@ -11619,6 +11645,7 @@ footer > div:first-of-type > div:first-of-type {
   flex-direction: column;
   justify-content: space-between;
   gap: 25px;
+  width: 20%;
 }
 footer > div:first-of-type > div:first-of-type p {
   font-family: "Times New Roman", Times, serif;
@@ -11644,6 +11671,7 @@ footer > div:first-of-type > div:first-of-type > div i:hover {
 }
 footer > div:first-of-type > div:nth-of-type(2) {
   flex-grow: 1;
+  width: 20%;
 }
 footer > div:first-of-type > div:nth-of-type(2) h6 {
   margin-top: 0;
@@ -11678,6 +11706,7 @@ footer > div:first-of-type > div:nth-of-type(2) ul li:hover {
 }
 footer > div:first-of-type > div:nth-of-type(3) {
   flex-grow: 1;
+  width: 20%;
 }
 footer > div:first-of-type > div:nth-of-type(3) h6 {
   font-size: 24px;
@@ -11712,7 +11741,7 @@ footer > div:first-of-type > div:nth-of-type(3) ul li:hover {
 }
 footer > div:first-of-type > div:last-of-type {
   width: 20%;
-  margin-left: 100px;
+  padding-left: 100px;
   flex-grow: 2;
 }
 footer > div:first-of-type > div:last-of-type h6 {
@@ -11771,6 +11800,196 @@ footer > div:last-of-type p {
   margin: 0;
 }
 
+@media (min-width: 1024px) {
+  nav ul {
+    display: flex !important;
+  }
+  nav i {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  nav ul {
+    display: none !important;
+    flex-wrap: wrap !important;
+  }
+  nav button {
+    display: none !important;
+  }
+  header {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    gap: 50px;
+  }
+  header #headerGauche {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header h1 {
+    text-wrap: nowrap;
+    display: flex;
+    gap: 10px;
+  }
+  header h3 {
+    text-wrap: nowrap;
+    text-align: center;
+  }
+  header #headerDroite {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+  }
+  #section1 {
+    flex-direction: column-reverse;
+  }
+  #section1 > div {
+    width: 100% !important;
+  }
+  #section2 #section2Bot > div br {
+    display: none;
+  }
+  #section3 #section3Bot {
+    flex-direction: column;
+  }
+  @keyframes apparitionMenus1 {
+    0% {
+      opacity: 0;
+      transform: scale(50%);
+      width: 50%;
+      transform: translateX(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(100%);
+      width: 100%;
+      transform: translateX(0);
+    }
+  }
+  @keyframes apparitionMenus2 {
+    0% {
+      opacity: 0;
+      transform: scale(50%);
+      width: 50%;
+      transform: translateX(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(100%);
+      width: 100%;
+      transform: translateX(0);
+    }
+  }
+  @keyframes apparitionMenus3 {
+    0% {
+      opacity: 0;
+      transform: scale(50%);
+      width: 50%;
+      transform: translateX(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(100%);
+      width: 100%;
+      transform: translateX(0);
+    }
+  }
+  @keyframes apparitionMenus4 {
+    0% {
+      opacity: 0;
+      transform: scale(50%);
+      width: 50%;
+      transform: translateX(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(100%);
+      width: 100%;
+      transform: translateX(0);
+    }
+  }
+  #section4 .carousel-item {
+    width: 100%;
+  }
+  #section4 .carousel-item .row {
+    flex-direction: column;
+    align-items: center;
+    width: 100% !important;
+    height: auto !important;
+  }
+  #section4 .carousel-item .row .col-md-6 {
+    width: 100%;
+  }
+  #section4 .carousel-item .row img {
+    height: auto !important;
+    width: 100% !important;
+  }
+  #section4 .cold-md-6 {
+    width: 100% !important;
+    height: auto !important;
+  }
+  #section4 .Carousel-Texte {
+    height: auto !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100%;
+  }
+  #section4 .Carousel-Texte p {
+    color: white;
+    font-size: 2vw;
+    margin-top: 20px;
+  }
+  #section4 .Carousel-Texte p:first-of-type {
+    margin-bottom: -5px;
+    color: rgb(205, 164, 93);
+    font-size: 4vw;
+    font-family: "Times New Roman", Times, serif;
+  }
+  #section4 .Carousel-Texte p:nth-of-type(2) {
+    font-size: 3.6vw;
+    border-bottom: 3px solid rgb(205, 164, 93);
+    display: inline;
+    font-weight: bold;
+  }
+  #section4 .Carousel-Texte p:nth-of-type(3) {
+    font-style: italic;
+  }
+  #section7 #section7Bot {
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: flex-start;
+  }
+  #section7 #section7Bot > div {
+    width: 47%;
+  }
+  #section8 #section8Bot {
+    flex-direction: column;
+  }
+  #section8 #section8Bot #section8BotGauche {
+    width: 100%;
+  }
+  #section8 #section8Bot #section8BotDroite {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  ul {
+    display: none !important;
+    flex-wrap: wrap !important;
+  }
+  button {
+    display: none !important;
+  }
+}
 /*!
  * Bootstrap  v5.3.5 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
