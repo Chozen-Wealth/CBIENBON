@@ -158,8 +158,187 @@
 // MOBILE
 @media (max-width:768px)
     nav
-    ul
-        display: none !important
-        flex-wrap: wrap !important
-    button
+        ul
             display: none !important
+            flex-wrap: wrap !important
+        button
+                display: none !important
+    header
+        flex-direction: column
+        justify-content: center
+        text-align: center
+        padding-left: 0 !important
+        padding-right: 0 !important
+        gap: 50px
+        #headerGauche
+            width: 100%
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+        h1
+            text-wrap: nowrap
+            display: flex
+            gap: 10px
+        h3
+            text-wrap: nowrap
+            text-align: center
+        #headerDroite
+            width: 100%
+            @include centerAll()
+            margin-right: 0
+    #section1
+        flex-direction: column-reverse
+        > div
+            width: 100% !important
+        #section1Gauche
+            p
+                font-size: 1.5rem
+    #section2
+        #section2Bot
+            flex-wrap: wrap
+            > div
+                br
+                    display: none
+    #section3
+        #section3Bot
+            flex-direction: column
+    @keyframes apparitionMenus1
+        0%
+            opacity: 0
+            transform: scale(50%)
+            width: 50%
+            transform: translateX(-30px)
+        100%
+            opacity: 1
+            transform: scale(100%)
+            width: 100%
+            transform: translateX(0)
+    @keyframes apparitionMenus2
+        0%
+            opacity: 0
+            transform: scale(50%)
+            width: 50%
+            transform: translateX(-30px)
+        100%
+            opacity: 1
+            transform: scale(100%)
+            width: 100%
+            transform: translateX(0)
+    @keyframes apparitionMenus3
+        0%
+            opacity: 0
+            transform: scale(50%)
+            width: 50%
+            transform: translateX(-30px)
+        100%
+            opacity: 1
+            transform: scale(100%)
+            width: 100%
+            transform: translateX(0)
+    @keyframes apparitionMenus4
+        0%
+            opacity: 0
+            transform: scale(50%)
+            width: 50%
+            transform: translateX(-30px)
+        100%
+            opacity: 1
+            transform: scale(100%)
+            width: 100%
+            transform: translateX(0)
+    #section4
+        .carousel-item
+            width: 100%
+            .row
+                flex-direction: column
+                align-items: center
+                width: 100% !important
+                height: auto !important
+                margin-right: 0px !important
+                margin-left: 0px !important
+                .col-md-6
+                    width: 100%
+                    padding: 0px !important
+                img
+                    height: auto !important
+                    width: 100% !important
+                    object-fit: cover
+        .cold-md-6
+            width: 100% !important
+            height: auto !important
+        .Carousel-Texte
+            height: auto !important
+            flex-direction: column !important
+            justify-content: center !important
+            align-items: center !important
+            width: 100%
+            p
+                color: white
+                font-size: 5vw !important
+                margin-top: 20px
+            p:first-of-type
+                margin-bottom: -5px
+                color: $beige
+                font-size: 4vw
+                font-family: 'Times New Roman', Times, serif
+            p:nth-of-type(2)
+                font-size: 3.6vw
+                border-bottom: 3px solid $beige
+                display: inline
+                font-weight: bold
+            p:nth-of-type(3)
+                font-style: italic
+    #section5
+        #section5LabelsTop
+            margin-bottom: 24px !important
+            flex-direction: column
+        #section5LabelsBot
+            flex-direction: column
+            margin-bottom: 24px !important
+    #section6-2
+        padding-left: 0
+        padding-right: 0
+        display: flex
+        flex-direction: column
+        #section6Bot
+            > div
+                display: flex
+                flex-direction: column
+                padding-right: 0px
+                > div
+                    width: 100%
+    #section7
+        #section7Bot
+            display: flex
+            flex-direction: row !important
+            flex-wrap: wrap !important
+            justify-content: flex-start
+            > div
+                width: 100%
+    #section8
+        #section8Bot
+            flex-direction: column
+            #section8BotGauche
+                width: 100%
+                #section9BotElement
+                    width: 100%
+                    > div:nth-of-type(2)
+                        p
+                            font-size: 0.8rem !important
+                            text-wrap: nowrap !important
+            
+            #section8BotDroite
+                width: 100%
+    footer
+        >div
+            flex-direction: column
+            gap: 25px
+            >div
+                display: flex
+                flex-direction: column
+                width: 100% !important
+            >div:last-of-type
+                padding-left: 0px !important
+        >div:last-of-type
+            font-size: 16px
