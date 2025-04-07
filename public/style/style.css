@@ -11853,6 +11853,9 @@ footer > div:last-of-type p {
   #section1 > div {
     width: 100% !important;
   }
+  #section1 #section1Gauche p {
+    font-size: 1.5rem;
+  }
   #section2 #section2Bot {
     flex-wrap: wrap;
   }
