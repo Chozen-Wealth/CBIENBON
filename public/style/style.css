@@ -12184,15 +12184,17 @@ footer > div:last-of-type p {
   }
   #section8 #section8Bot {
     flex-direction: column;
+    gap: 40px !important;
   }
   #section8 #section8Bot #section8BotGauche {
     width: 100%;
+    gap: 25px;
   }
-  #section8 #section8Bot #section8BotGauche #section9BotElement {
-    width: 100%;
+  #section8 #section8Bot #section8BotGauche #section8BotElement {
+    width: 100% !important;
   }
-  #section8 #section8Bot #section8BotGauche #section9BotElement > div:nth-of-type(2) p {
-    font-size: 0.8rem !important;
+  #section8 #section8Bot #section8BotGauche #section8BotElement > div:nth-of-type(2) p {
+    font-size: 1rem !important;
     text-wrap: nowrap !important;
   }
   #section8 #section8Bot #section8BotDroite {
