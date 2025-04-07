@@ -11824,13 +11824,16 @@ footer > div:last-of-type p {
   }
   nav:has(#navBurger:checked) ul {
     opacity: 1;
-    transform: translateX();
-    display: flex !important;
+    transform: translateY(0px);
+    visibility: visible !important;
     padding-left: 0px !important;
     padding-right: 0px !important;
     justify-content: space-around !important;
     flex-direction: row;
     flex-wrap: nowrap !important;
+    position: absolute;
+    top: 100px;
+    width: 100%;
   }
   nav:has(#navBurger:checked) ul li {
     width: 100% !important;
@@ -11849,9 +11852,32 @@ footer > div:last-of-type p {
     right: 5% !important;
     top: 30px !important;
   }
+  nav {
+    display: flex !important;
+    align-items: flex-end !important;
+    justify-content: center !important;
+    transition: 0.5s ease;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
   nav ul {
-    display: none !important;
+    visibility: hidden !important;
     flex-wrap: wrap !important;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: 0.5s ease;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    justify-content: space-around !important;
+    flex-direction: row;
+    flex-wrap: nowrap !important;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+  }
+  nav ul li {
+    width: 100% !important;
+    height: 100% !important;
   }
   nav button {
     display: none !important;
@@ -11860,6 +11886,12 @@ footer > div:last-of-type p {
     position: absolute !important;
     right: 5% !important;
     top: 30px !important;
+    cursor: pointer;
+  }
+  nav > a {
+    position: absolute;
+    left: 5%;
+    top: 25px;
   }
   header {
     flex-direction: column;
