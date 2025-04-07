@@ -319,7 +319,7 @@ header
                 cursor: pointer
                 label
                     cursor: pointer
-            li:first-of-type
+            li:hover
                 color: $beige
     input
         display: none
@@ -385,6 +385,8 @@ header
         transform: translateX(0)
 
 #section3:has(#filtreAll:checked)
+    .liAll
+        color: $beige
     .elementMenu
         position: relative
         visibility: visible
@@ -410,6 +412,8 @@ header
     .elementMenu:nth-of-type(9)
         animation-delay: 0.45s
 #section3:has(#filtreStarters:checked)
+    .liStarters
+        color: $beige
     .starters
         position: relative
         visibility: visible
@@ -434,6 +438,8 @@ header
         pointer-events: none
         transition: opacity 0s, position 0.5s ease 1s
 #section3:has(#filtreSalads:checked)
+    .liSalads
+        color: $beige
     .salads
         position: relative
         visibility: visible
@@ -458,6 +464,8 @@ header
         pointer-events: none
         transition: opacity 0s, position 0.5s ease 1s
 #section3:has(#filtreSpeciality:checked)
+    .liSpeciality
+        color: $beige
     .speciality
         position: relative
         visibility: visible

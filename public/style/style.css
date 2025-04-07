@@ -10962,7 +10962,7 @@ header #headerDroite #cerclePlay::before {
 #section3 #section3Mid ul li label {
   cursor: pointer;
 }
-#section3 #section3Mid ul li:first-of-type {
+#section3 #section3Mid ul li:hover {
   color: rgb(205, 164, 93);
 }
 #section3 input {
@@ -11071,6 +11071,9 @@ header #headerDroite #cerclePlay::before {
     transform: translateX(0);
   }
 }
+#section3:has(#filtreAll:checked) .liAll {
+  color: rgb(205, 164, 93);
+}
 #section3:has(#filtreAll:checked) .elementMenu {
   position: relative;
   visibility: visible;
@@ -11106,6 +11109,9 @@ header #headerDroite #cerclePlay::before {
   animation-delay: 0.45s;
 }
 
+#section3:has(#filtreStarters:checked) .liStarters {
+  color: rgb(205, 164, 93);
+}
 #section3:has(#filtreStarters:checked) .starters {
   position: relative;
   visibility: visible;
@@ -11136,6 +11142,9 @@ header #headerDroite #cerclePlay::before {
   transition: opacity 0s, position 0.5s ease 1s;
 }
 
+#section3:has(#filtreSalads:checked) .liSalads {
+  color: rgb(205, 164, 93);
+}
 #section3:has(#filtreSalads:checked) .salads {
   position: relative;
   visibility: visible;
@@ -11166,6 +11175,9 @@ header #headerDroite #cerclePlay::before {
   transition: opacity 0s, position 0.5s ease 1s;
 }
 
+#section3:has(#filtreSpeciality:checked) .liSpeciality {
+  color: rgb(205, 164, 93);
+}
 #section3:has(#filtreSpeciality:checked) .speciality {
   position: relative;
   visibility: visible;
