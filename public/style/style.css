@@ -11807,6 +11807,9 @@ footer > div:last-of-type p {
   nav i {
     display: none !important;
   }
+  footer #footerLast {
+    padding-left: 0px !important;
+  }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   nav ul {
@@ -11986,8 +11989,28 @@ footer > div:last-of-type p {
   #section8 #section8Bot #section8BotDroite {
     width: 100%;
   }
+  footer p {
+    font-size: 1rem !important;
+  }
+  footer li {
+    font-size: 1rem;
+  }
+  footer #footerLast {
+    padding-left: 0px;
+  }
+  footer #footerDivSocials {
+    gap: 2px;
+  }
+  footer #footerDivSocials i {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
 }
 @media (max-width: 768px) {
+  #VideoBox > div {
+    width: 90% !important;
+  }
   nav ul {
     display: none !important;
     flex-wrap: wrap !important;
@@ -12011,13 +12034,18 @@ footer > div:last-of-type p {
     align-items: center;
   }
   header h1 {
+    font-size: 2rem !important;
     text-wrap: nowrap;
     display: flex;
     gap: 10px;
   }
   header h3 {
+    font-size: 1.3rem;
     text-wrap: nowrap;
     text-align: center;
+  }
+  header button {
+    font-size: 1rem !important;
   }
   header #headerDroite {
     width: 100%;

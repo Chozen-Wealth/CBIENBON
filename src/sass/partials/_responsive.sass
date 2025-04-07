@@ -10,6 +10,9 @@
             display: flex !important
         i
             display: none !important
+    footer
+        #footerLast
+            padding-left: 0px !important
 // TABLETTE
 @media (min-width:768px) and (max-width:1024px)
     nav
@@ -155,8 +158,24 @@
                 width: 100%
             #section8BotDroite
                 width: 100%
+    footer
+        p
+            font-size: 1rem !important
+        li
+            font-size: 1rem
+        #footerLast
+            padding-left: 0px
+        #footerDivSocials
+            gap: 2px
+            i
+                width: 40px
+                height: 40px
+                font-size: 16px
 // MOBILE
 @media (max-width:768px)
+    #VideoBox
+        >div
+            width: 90% !important
     nav
         ul
             display: none !important
@@ -177,12 +196,16 @@
             justify-content: center
             align-items: center
         h1
+            font-size: 2rem !important
             text-wrap: nowrap
             display: flex
             gap: 10px
         h3
+            font-size: 1.3rem
             text-wrap: nowrap
             text-align: center
+        button
+            font-size: 1rem !important
         #headerDroite
             width: 100%
             @include centerAll()
