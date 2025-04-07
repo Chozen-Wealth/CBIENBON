@@ -10737,20 +10737,21 @@ header #headerDroite #cerclePlay::before {
   display: flex;
   justify-content: center;
   align-items: center;
+  align-items: flex-start;
 }
 #section1 #section1Gauche {
   width: 50%;
 }
 #section1 #section1Gauche h3 {
-  font-size: 40px;
+  font-size: 2rem;
   font-weight: bold;
   font-family: "Times New Roman", Times, serif;
 }
 #section1 #section1Gauche p {
-  font-size: 22px;
+  font-size: 1rem;
 }
 #section1 #section1Gauche p i {
-  font-size: 26px;
+  font-size: 1.5rem;
   color: rgb(205, 164, 93);
 }
 #section1 #section1Gauche p:first-of-type i {
@@ -11851,6 +11852,9 @@ footer > div:last-of-type p {
   }
   #section1 > div {
     width: 100% !important;
+  }
+  #section2 #section2Bot {
+    flex-wrap: wrap;
   }
   #section2 #section2Bot > div br {
     display: none;
