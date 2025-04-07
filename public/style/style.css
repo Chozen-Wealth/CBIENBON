@@ -10866,7 +10866,6 @@ header #headerDroite #cerclePlay::before {
   display: flex;
   justify-content: space-between;
   gap: 25px;
-  flex-wrap: wrap;
 }
 #section2 #section2Bot div {
   padding-left: 40px;
@@ -11991,7 +11990,7 @@ footer > div:last-of-type p {
   }
 }
 /*!
- * Bootstrap  v5.3.5 (https://getbootstrap.com/)
+ * Bootstrap  v5.3.4 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
