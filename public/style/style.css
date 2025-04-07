@@ -10544,6 +10544,12 @@ nav {
   flex-wrap: nowrap !important;
   width: 100% !important;
 }
+nav #divOpenClose {
+  display: flex;
+}
+nav #openNav {
+  display: block;
+}
 nav button {
   border: 2px solid rgb(205, 164, 93);
   padding: 10px 35px;
@@ -11807,6 +11813,19 @@ footer > div:last-of-type p {
   nav i {
     display: none !important;
   }
+  nav #navBurger {
+    display: none;
+  }
+  nav #openNav {
+    display: block !important;
+    visibility: hidden;
+    position: absolute;
+  }
+  nav #closeNav {
+    display: block !important;
+    visibility: hidden;
+    position: absolute;
+  }
   footer #footerLast {
     padding-left: 0px !important;
   }
@@ -11821,6 +11840,14 @@ footer > div:last-of-type p {
     justify-content: center !important;
     height: 150px;
     margin-bottom: -150px;
+  }
+  nav:has(#navBurger:checked) #openNav {
+    visibility: hidden;
+    opacity: 0;
+  }
+  nav:has(#navBurger:checked) #closeNav {
+    visibility: visible;
+    opacity: 1;
   }
   nav:has(#navBurger:checked) ul {
     opacity: 1;
@@ -11859,6 +11886,16 @@ footer > div:last-of-type p {
     transition: 0.5s ease;
     padding-right: 0px !important;
     padding-left: 0px !important;
+  }
+  nav #closeNav {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease;
+  }
+  nav #openNav {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.3s ease;
   }
   nav ul {
     visibility: hidden !important;
@@ -12085,12 +12122,105 @@ footer > div:last-of-type p {
   #VideoBox > div {
     width: 90% !important;
   }
+  #navBurger {
+    display: none;
+  }
+  nav:has(#navBurger:checked) {
+    display: flex !important;
+    align-items: flex-end !important;
+    justify-content: center !important;
+    height: 150px;
+    margin-bottom: -150px;
+  }
+  nav:has(#navBurger:checked) #openNav {
+    visibility: hidden;
+    opacity: 0;
+  }
+  nav:has(#navBurger:checked) #closeNav {
+    visibility: visible;
+    opacity: 1;
+  }
+  nav:has(#navBurger:checked) ul {
+    opacity: 1;
+    transform: translateY(0px);
+    visibility: visible !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    justify-content: space-around !important;
+    flex-direction: row;
+    flex-wrap: nowrap !important;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+  }
+  nav:has(#navBurger:checked) ul li {
+    width: fit-content;
+  }
+  nav:has(#navBurger:checked) > a {
+    position: absolute;
+    left: 5%;
+    top: 25px;
+  }
+  nav:has(#navBurger:checked) button {
+    display: flex;
+  }
+  nav:has(#navBurger:checked) i {
+    position: absolute !important;
+    right: 5% !important;
+    top: 30px !important;
+  }
+  nav {
+    display: flex !important;
+    align-items: flex-end !important;
+    justify-content: center !important;
+    transition: 0.5s ease;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+  nav #closeNav {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease;
+  }
+  nav #openNav {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.3s ease;
+  }
   nav ul {
-    display: none !important;
+    visibility: hidden !important;
     flex-wrap: wrap !important;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: 0.5s ease;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    justify-content: space-around !important;
+    flex-direction: row;
+    flex-wrap: nowrap !important;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+  }
+  nav ul li {
+    width: fit-content !important;
+  }
+  nav ul li a {
+    font-size: 16px !important;
   }
   nav button {
     display: none !important;
+  }
+  nav i {
+    position: absolute !important;
+    right: 5% !important;
+    top: 30px !important;
+    cursor: pointer;
+  }
+  nav > a {
+    position: absolute;
+    left: 5%;
+    top: 25px;
   }
   header {
     flex-direction: column;

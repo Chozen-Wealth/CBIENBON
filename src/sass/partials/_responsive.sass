@@ -10,6 +10,17 @@
             display: flex !important
         i
             display: none !important
+        #navBurger
+            display: none
+        #openNav
+            display: block !important
+            visibility: hidden
+            position: absolute
+        #closeNav
+            display: block !important
+            visibility: hidden
+            position: absolute
+            
     footer
         #footerLast
             padding-left: 0px !important
@@ -23,6 +34,12 @@
         justify-content: center !important
         height: 150px
         margin-bottom: -150px
+        #openNav
+            visibility: hidden
+            opacity: 0
+        #closeNav
+            visibility: visible
+            opacity: 1
         ul
             opacity: 1
             transform: translateY(0px)
@@ -55,6 +72,14 @@
         transition: 0.5s ease
         padding-right: 0px !important
         padding-left: 0px !important
+        #closeNav
+            visibility: hidden
+            opacity: 0
+            transition: 0.3s ease
+        #openNav
+            visibility: visible
+            opacity: 1
+            transition: 0.3s ease
         ul
             visibility: hidden !important
             flex-wrap: wrap !important
@@ -238,12 +263,88 @@
     #VideoBox
         >div
             width: 90% !important
-    nav
+    #navBurger
+        display: none
+    nav:has(#navBurger:checked)
+        display: flex !important
+        align-items: flex-end !important
+        justify-content: center !important
+        height: 150px
+        margin-bottom: -150px
+        #openNav
+            visibility: hidden
+            opacity: 0
+        #closeNav
+            visibility: visible
+            opacity: 1
         ul
-            display: none !important
-            flex-wrap: wrap !important
+            opacity: 1
+            transform: translateY(0px)
+            visibility: visible !important
+            padding-left: 0px !important
+            padding-right: 0px !important
+            justify-content: space-around !important
+            flex-direction: row
+            flex-wrap: nowrap !important
+            position: absolute
+            top: 100px
+            width: 100%
+            li
+                width: fit-content
+        >a
+            position: absolute
+            left: 5%
+            top: 25px
         button
-                display: none !important
+            display: flex
+        i
+            position: absolute !important
+            right: 5% !important
+            top: 30px !important
+    nav
+        display: flex !important
+        align-items: flex-end !important
+        justify-content: center !important
+        transition: 0.5s ease
+        padding-right: 0px !important
+        padding-left: 0px !important
+        #closeNav
+            visibility: hidden
+            opacity: 0
+            transition: 0.3s ease
+        #openNav
+            visibility: visible
+            opacity: 1
+            transition: 0.3s ease
+        ul
+            visibility: hidden !important
+            flex-wrap: wrap !important
+            opacity: 0
+            transform: translateY(-50px)
+            transition: 0.5s ease
+            padding-left: 0px !important
+            padding-right: 0px !important
+            justify-content: space-around !important
+            flex-direction: row
+            flex-wrap: nowrap !important
+            position: absolute
+            top: 100px
+            width: 100%
+            li
+                width: fit-content !important
+                a
+                    font-size: 16px !important
+        button
+            display: none !important
+        i
+            position: absolute !important
+            right: 5% !important
+            top: 30px !important
+            cursor: pointer
+        >a
+            position: absolute
+            left: 5%
+            top: 25px
     header
         flex-direction: column
         justify-content: center
