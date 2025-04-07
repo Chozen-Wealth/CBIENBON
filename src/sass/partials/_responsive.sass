@@ -15,12 +15,46 @@
             padding-left: 0px !important
 // TABLETTE
 @media (min-width:768px) and (max-width:1024px)
+    #navBurger
+        display: none
+    nav:has(#navBurger:checked)
+        display: flex !important
+        align-items: flex-end !important
+        justify-content: center !important
+        height: 150px
+        margin-bottom: -150px
+        ul
+            opacity: 1
+            transform: translateX()
+            display: flex !important
+            padding-left: 0px !important
+            padding-right: 0px !important
+            justify-content: space-around !important
+            flex-direction: row
+            flex-wrap: nowrap !important
+            li
+                width: 100% !important
+                height: 100% !important
+        >a
+            position: absolute
+            left: 5%
+            top: 25px
+        button
+            display: flex
+        i
+            position: absolute !important
+            right: 5% !important
+            top: 30px !important
     nav
         ul
             display: none !important
             flex-wrap: wrap !important
         button
             display: none !important
+        i
+            position: absolute !important
+            right: 5% !important
+            top: 30px !important
     header
         flex-direction: column
         justify-content: center
